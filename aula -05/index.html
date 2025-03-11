@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-05</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1><HR></HR>
+    <h2><b> Negrito / Destaque</b></h2>
+    <p>Na frase temos um <b>parte do texto em negrito</b>usando a tag B (não semâtica)</p>
+    <p>Na frase temos um <strong>arte do texto em negrito</strong> usando a tag strong (com semâtica)</p>
+    <br>
+    <h2><strong>Itálico / Ênfase</strong></h2>
+    <p>Nesta frase vamos entar com palavra em <i>itálico</i> usando a tag i (não semâtica)</p>
+    <p>Nesta frase vamos  entrar comm uma palavra em <em>itálico</em> a tag EM (com semâtica)</p>
+    <br>
+    <h2><strong>Texto Marcador</strong></h2>
+    <p>Aqui vamos usar um texto com destaque <mark>de marcador de testo</mark> usando o mark</p>
+    <p>Aqui vamos usar um texto com destaque <mark style="background-color:pink">de marcador de testo</mark> usando o mark</p>
+    <br>
+    <h2><strong>Texto grande e pequeno</strong></h2>
+    <p>Estamos trabalhando aqui com um <big>texto grande</big> e um <small>texto pequeno</small> nesta frase </p>
+    <br>
+    <h2><strong>Texto deletado</strong></h2>
+    <p>Neste paragrafo vamos trabalhar com um texto <del>que foi excluido</del> da frase</p>
+    <br>
+    <h2><strong>Texto  inserido</strong></h2>
+    <p>Nesta frase vamos demostra como <ins>destacar um texto inserido</ins> na frase da forma semâtica</p> 
+    <p>Neste frase vamos demostra como <u>destacar um texto inserido</u> na frase de forma não semâtica</p>
+    <br>
+    <h2><strong>Texto sobrescrito</strong></h2>
+    <p>Vamos semostrar uma formula do equação do segundo grau ax <sup>2</sup>+bx+c=0 usando a tag sup</p>
+    <br>
+    <h2><strong>Trecho de código fonte</strong></h2>
+    <P>Neste exemplo vou demostraum trecho de código</P>
+    <p>inserido o comnaodo do <pre><code>document.getElementById('edtCodigo')</code></pre> que é um comando java script</p>
+    <p>Iinserindo um longo codigo me python</p>
+    <pre><code>import pandas as pd
+        import numpy as np
+        
+        # Função para remover outliers com base no Z-Score
+        def remove_outlier(df_old, threshold=3):
+            # Calcula a média e o desvio padrão de cada coluna numérica
+            mean = df_old.mean()
+            std_dev = df_old.std()
+            
+            # Calcula o Z-Score de cada valor
+            z_scores = (df_old - mean) / std_dev
+            
+            # Filtra os dados para remover outliers
+            df_clean = df_old[(z_scores.abs() <= threshold).all(axis=1)]
+            
+            return df_clean
+        
+        # Exemplo de uso
+        # df_old é o seu DataFrame original
+        df_cleaned = remove_outlier(df_old)
+        
+        # Exibe o DataFrame sem os outliers
+        print(df_cleaned)</code></pre>
+        <br>
+    <h2><strong>Citações (quotation) simples</strong></h2>
+    <p>Sengundo Steve Jobs <Blockquote>A tecnologia move o mundo</Blockquote> </p>
+    <br>
+    <h2><strong>Citações completas (livros)</strong></h2>
+    <p>Segundo Sandra Kussunoki no seu livro Adança e o ventre</p>
+    <p><blockquote>Este livro aborda a dança do ventre desde a origem até os dias de hoje, revelando um cenário de surpresas e descobertas sobre o universo que envolve essa expressiva e encantadora arte; apresenta reflexões críticas sobre padrões estéticos, discorre também sobre os benefícios dessa</blockquote></p>
+    <p></p>
+
+
+
+    
+
+
+
+</body>
+</html>
